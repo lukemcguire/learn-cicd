@@ -22,5 +22,5 @@ func GetAPIKey(headers http.Header) (string, error) {
 		return "", ErrMalformedAuthHeader
 	}
 
-	return splitAuth[1], errors.New("error to make ensure the CI tests fail")
+	return splitAuth[1], nil
 }
